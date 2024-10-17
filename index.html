@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./theme.css">
+<link rel="stylesheet" href="./customise.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Font Awesome phiên bản 5 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3 !important;
+  width: 250px !important;
+  top: 43px !important;
+  bottom: 0 !important;
+  height: inherit !important;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-brown w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-hide-large w3-hover-brown w3-large" href="javascript:void(0)" onclick="w3_open_top()"><i class="fas fa-robot"></i></a>
+
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-brown" onclick="loadContent('./main/home.html')"><i class="fas fa-robot"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-brown" onclick="loadContent('./main/mon-hoc.html')">Môn học</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-brown" onclick="loadContent('./main/cac-cong-nghe-web.html')">Công nghệ Web</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-brown" onclick="loadContent('./main/sinh-vien.html')">Sinh viên</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-brown" onclick="loadContent('./main/ai.html')">AI</a>
+</div>
+  
+</div>
+
+<!-- TopSidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-d5 w3-animate-left" id="myTopSidebar">
+  <a href="javascript:void(0)" onclick="w3_close_top()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="" onclick="loadContent('./main/home.html'); w3_close_top()"><a class="w3-button w3-hover-brown" href="#"><b>Home</b></a></h4>
+  <a href="#" class="w3-bar-item w3-button w3-hover-brown" onclick="loadContent('./main/mon-hoc.html'); w3_close_top()">Môn học</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-brown" onclick="loadContent('./main/cac-cong-nghe-web.html'); w3_close_top()">Công nghệ Web</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-brown" onclick="loadContent('./main/sinh-vien.html'); w3_close_top()">Sinh viên</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-brown" onclick="loadContent('./main/ai.html'); w3_close_top()">AI</a>
+</nav>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <div id="sideBarLinks">
+    <!-- Sidebar links will be dynamically loaded based on selected content -->
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close(); w3_close_top()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" id="contentArea">
+
+  <!-- Main content will be loaded here -->
+
+<!-- END MAIN -->
+</div>
+
+<footer id="myFooter" class="w3-footer">
+  <div class="w3-container w3-theme-l2 w3-padding-32 w3-row-padding">
+    <div class="w3-third">
+      <h4>Về Tôi</h4>
+      <p>Đây là trang web cá nhân của tôi chia sẻ về việc học Côn nghệ thông tin.</p>
+    </div>
+    <div class="w3-third">
+      <h4>Lĩnh vực quan tâm</h4>
+      <ul class="w3-ul">
+        <li><a class="w3-bar-item" href="https://openai.com/" target="_blank" style="text-decoration: none">Deep learning</a></li>
+        <li><a class="w3-bar-item" href="https://openai.com/" target="_blank" style="text-decoration: none">Artificial Neural Network</a></li>
+        <li><a class="w3-bar-item" href="https://openai.com/" target="_blank" style="text-decoration: none">Reinforcement learning</a></li>
+        <li><a class="w3-bar-item" href="https://openai.com/" target="_blank" style="text-decoration: none">Evolutionary Algorithms</a></li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <h4>Liên Hệ</h4>
+      <p><i class="fa fa-map-marker "></i> Đại học Bách khoa Hà Nội</p>
+      <p><i class="fa fa-phone "></i> 0936-xxx-xxx</p>
+      <p><i class="fa fa-envelope "></i> tranthanhnam@gmail.com</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="w3-container w3-theme-l4 w3-center">
+    <p>&copy 2024 Đã đăng ký bản quyền.</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
